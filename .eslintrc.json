@@ -1,0 +1,22 @@
+{
+  "env": {
+    "node": true,
+    "commonjs": true,
+    "es2021": true
+  },
+  "extends": ["airbnb-base"],
+  "parserOptions": {
+    "ecmaVersion": 12
+  },
+  "ignorePatterns": ["apidoc/*"],
+  "rules": {
+    "indent": ["error", 2, {
+      "SwitchCase": 1
+    }],
+    "operator-linebreak": [2, "before", { "overrides": { "=": "after" } }],
+    "no-param-reassign": [2, { "props": false }],
+    "semi": [2, "always"],
+    "no-unused-vars": 0,
+    "allowNamedFunctions": true 
+  }
+}
